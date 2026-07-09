@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#F8F8F6">
+<meta name="description" content="Fullstack developer portfolio — interfaces, backend logic, and the data layer that ties it together.">
+<title>Bry Josh — Fullstack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav__inner">
+    <a href="#top" class="nav__name">Bry Josh</a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav__status">
+      <span class="status-dot" aria-hidden="true"></span>Available for work
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+  <section class="hero wrap" id="hero">
+    <div class="hero__grid">
+      <div>
+        <span class="eyebrow">Fullstack Developer (placeholder example)</span>
+        <h1>One person.<br>The <span class="accent-text">whole stack</span>.</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="btn-row">
+          <a href="#work" class="btn btn--primary">View my work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="stack" aria-hidden="true">
+        <div class="stack-layer">
+          <div class="stack-layer__label">Interface</div>
+          <div class="stack-layer__tech">React · TypeScript · CSS</div>
+        </div>
+        <div class="stack-layer">
+          <div class="stack-layer__label">Logic</div>
+          <div class="stack-layer__tech">Node.js · Python · GraphQL</div>
+        </div>
+        <div class="stack-layer">
+          <div class="stack-layer__label">Data</div>
+          <div class="stack-layer__tech">PostgreSQL · Redis · AWS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills wrap reveal" id="skills">
+    <div class="skills__head">
+      <span class="eyebrow">Skills</span>
+      <h2>The stack, in full</h2>
+    </div>
+    <div class="skills__grid">
+      <div class="skill-col">
+        <div class="skill-col__label">Interface</div>
+        <ul>
+          <li>React &amp; Next.js</li>
+          <li>TypeScript</li>
+          <li>Tailwind CSS</li>
+          <li>Accessibility (WCAG)</li>
+          <li>Responsive design</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <div class="skill-col__label">Logic</div>
+        <ul>
+          <li>Node.js &amp; Express</li>
+          <li>Python &amp; FastAPI</li>
+          <li>REST &amp; GraphQL APIs</li>
+          <li>Auth &amp; authorization</li>
+          <li>Automated testing</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <div class="skill-col__label">Data</div>
+        <ul>
+          <li>PostgreSQL &amp; MongoDB</li>
+          <li>Redis</li>
+          <li>Docker</li>
+          <li>AWS / GCP</li>
+          <li>CI/CD pipelines</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="work wrap reveal" id="work">
+    <span class="eyebrow">Selected Work</span>
+    <h2>A few things I've shipped</h2>
+    <div class="work__grid">
+
+      <article class="project-card">
+        <h3>Test 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Stripe</span><span class="tag">Docker</span>
+        </div>
+        <a href="#" class="project-link">View case study
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 10L10 4M10 4H5M10 4V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <article class="project-card">
+        <h3>test 2</h3>
+        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="tag-row">
+          <span class="tag">TypeScript</span><span class="tag">Socket.io</span><span class="tag">Redis</span><span class="tag">AWS</span>
+        </div>
+        <a href="#" class="project-link">View project
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 10L10 4M10 4H5M10 4V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <article class="project-card">
+        <h3>Test 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="tag-row">
+          <span class="tag">React</span><span class="tag">Storybook</span><span class="tag">Tailwind</span>
+        </div>
+        <a href="#" class="project-link">View project
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 10L10 4M10 4H5M10 4V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <article class="project-card">
+        <h3>Test 3</h3>
+        <p>Public REST API handling reservations and Stripe payments, running at 99.95% uptime over 18 months.</p>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Stripe</span><span class="tag">Docker</span>
+        </div>
+        <a href="#" class="project-link">View project
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 10L10 4M10 4H5M10 4V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="about wrap reveal" id="about">
+    <div class="about__grid">
+      <div class="about__photo">
+        <img src="profile.jpg" alt="Portrait of Bry Josh" width="800" height="800">
+      </div>
+      <div>
+        <span class="eyebrow">About</span>
+        <h2>A bit about how I work</h2>
+        <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="principles">
+          <div class="principle"><span class="principle__mark">→</span><p>phase 1</p></div>
+          <div class="principle"><span class="principle__mark">→</span><p>testing principle 2.</p></div>
+          <div class="principle"><span class="principle__mark">→</span><p>Testing principle 3.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact wrap reveal" id="contact">
+    <span class="eyebrow eyebrow--center">Contact</span>
+    <h2>Let's build something</h2>
+    <p class="lead">Have a project in mind, or just want to talk shop? My inbox is open.</p>
+    <a href="mailto:hello@yourname.com" class="btn btn--primary">hello@yourname.com</a>
+    <div class="social-row">
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">X</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <span>© 2026 Bry Josh</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
